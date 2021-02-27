@@ -37,7 +37,7 @@ const slider = () => {
         
         </div>
         <div class="banner__img-box">
-            <img src="img/${item.imgUrl}" class="img-box__img">
+            <img src="img/${item.imgUrl}" class="img-box__img" alt="slider">
             <h1 class="info__text">${item.infoFromItems.name}</h1>
         </div>
     `
@@ -674,8 +674,8 @@ class RenderCart {
         const cartCard = cElem('div', 'cart-content__list-box')
 
         itemsForRender.forEach(item => {
-            let cartBtnLeft = "";
-            let cartBtnRight = "";
+            let cartBtnLeft;
+            let cartBtnRight;
             item.count > 1 ? (cartBtnLeft = "cart-content__button-left") : (cartBtnLeft = "cart-content__button-dis");
             item.count < 4 ? (cartBtnRight = "cart-content__button-right") : (cartBtnRight = "cart-content__button-dis");
 
