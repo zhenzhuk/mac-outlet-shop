@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>MacOutlet</title>
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="modal">
+        <div class="modal__content-wrap"><div class="modal__content"></div> </div>
+    </div>
+    <div class="container-flex">
+        <header class="header">
+            <div class="container-size">
+                <div class="header__inner">
+                    <div class="logo"> <img alt="logo" src="img/icon/image 1.svg"></div>
+                    <div class = "cart">
+                        <div class="cart__box">
+                            <svg><use href="icons/sprite.svg#cart"></use></svg>
+                            <span class="cart__quantity-item"></span>
+                        </div>
+                        <div class="cart__cart-content cart-content"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="container-size">
+                <section class="slider">
+                    <div class="slider__inner">
+                        <div class="slider__content"></div>
+                    </div>
+                    <div class="slider__inner-buttons">
+                        <button class="btn-prev">
+                            <svg class="arrow">
+                                <use href="icons/sprite.svg#arrowSlider"></use>
+                            </svg>
+                        </button>
+                        <button class="btn-next">
+                            <svg class="arrow">
+                                <use href="icons/sprite.svg#arrowSlider"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </section>
+                <nav class="navigation search">
+                    <svg class="icon-search">
+                      <use href="icons/sprite.svg#searchInp"></use>
+                    </svg>
+                    <label>
+                      <input type="text" placeholder = "Enter device name..." class="search__inp">
+                    </label>
+                    <button class="search__sett-price">
+                      <svg class="icon-setting">
+                          <use href="icons/sprite.svg#settingInp"></use>
+                      </svg>
+                    </button>
+                    <div class="search__sett-price-block">
+                      <span>Order</span>
+
+                      <input name="radio" id="def" type="radio" value="def" checked>
+                      <label for="def"><span>Default</span></label>
+
+                      <input name="radio"  id="asc"  type="radio" value="asc">
+                      <label for="asc"><span>Ascend</span></label>
+
+                      <input name="radio"  id="desc"  type="radio" value="desc">
+                      <label for="desc"><span>Descend</span></label>
+                    </div>
+                </nav>
+                <div class="main_content__container-flex">
+                    <aside class="filter-block"><nav class="filter-container"></nav></aside>
+                    <section class="card-block"></section>
+                </div>
+            </div>
+        </main>
+    </div>
+    <footer><div class="container-size">MacOutlet</div></footer>
+</div>
+
+<script src="js/items.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/newindex.js"></script>
+
+</body>
+</html>
+
+
+
