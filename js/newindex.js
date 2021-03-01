@@ -34,8 +34,6 @@ const slider = () => {
     const renderBanner = item => {
         const containerSlider = cElem('div', 'banner');
         containerSlider.innerHTML = `
-        
-        </div>
         <div class="banner__img-box">
             <img src="img/${item.imgUrl}" class="img-box__img" alt="slider">
             <h1 class="info__text">${item.infoFromItems.name}</h1>
